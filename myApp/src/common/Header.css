@@ -1,0 +1,223 @@
+.HeaderBox {
+    background-color: #6236FF !important;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.HeaderToggle {
+    color: white;
+}
+
+.HeaderBoxCenter {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.HeaderCenter {
+    float: left;
+    margin-left: 30%;
+    padding-top: 5px;
+}
+
+.HeaderCenter img {
+    width: 100px;
+}
+
+.HeaderRight {
+    float: right;
+    display: flex;
+    padding-right: 10px;
+}
+
+.NotificationAlart {
+    background-color: white;
+    color: #6236FF;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+
+}
+
+.NotificationBage {
+    position: absolute;
+    background-color: #FF396F !important;
+    padding: 3px;
+    font-size: 10px;
+    margin: -3px 0px 0px -22px;
+    z-index: 5;
+    color: white;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.HeaderNotification {}
+
+
+.HeaderProfile {}
+
+
+
+
+
+.MenuProfile {}
+
+.MenuProfileTextImage {
+    padding-bottom: 15px;
+}
+
+.MenuUser {
+    float: left;
+    width: 50px;
+    height: 50px;
+    /* background-color: #6236FF; */
+    margin-right: 8px;
+    margin-left: 3px;
+}
+
+.MenuUserText {
+    width: 100%;
+}
+
+.MenuUserText p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #230b46;
+}
+
+.MenuUserText span {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.MenuBalance {
+    background-color: #6236FF;
+    color: white;
+    width: 100%;
+    height: 180px;
+    padding: 20px;
+}
+
+.MenuBalance p {
+    margin-bottom: 2px;
+    color: #ebdfdf;
+}
+
+.MenuBalance h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+
+.MenuBalanceItemBox {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.MenuBalanceItem {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+
+.MenuBalanceItem span {
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.MenuBalanceItemIcon {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* margin: 5px; */
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+    margin-right: auto;
+}
+
+
+.MenuBalanceItem p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
+/* IonContent menu start */
+.HeaderContentMenu {
+    padding: 10px;
+}
+
+.HeaderContentMenu p {
+    color: #999;
+    margin-bottom: 5px;
+}
+
+
+/* item  */
+.HeaderContentMenuItem {
+    /* border: 1px solid #999; */
+    box-shadow: 0px 0px 1px #999;
+    padding: 10px;
+    margin-bottom: 3px;
+    display: flex;
+}
+
+.HeaderContentMenuItemIcon{
+    margin-right: 5px;
+}
+.HeaderContentMenuItemIconImg{
+    font-size: 25px;
+    /* color: #6236FF; */
+    color: #6236FF !important;
+
+}
+.HeaderContentMenuItemText{
+    color: #27173E !important;
+    display: flex;
+
+}
+.HeaderContentMenuItemArrow{
+    margin-left: auto;
+    display: flex;
+}
+.ContentMenuBox{
+    width: 25px;
+    height: 25px;
+    font: 12px;
+    margin-left: 10px;
+    background-color: red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+/* item  */
+
+/* IonContent menu end */

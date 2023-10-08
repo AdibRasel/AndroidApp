@@ -1,0 +1,11 @@
+.FooterFixed{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.FooterIcon{
+    font-size: 22px;
+    padding-bottom: 5px;
+}
