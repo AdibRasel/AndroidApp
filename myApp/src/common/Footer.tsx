@@ -7,6 +7,8 @@ import { SiPagekit } from 'react-icons/si';
 import { TbComponents } from 'react-icons/tb';
 import { AiOutlineCreditCard, AiFillSetting } from 'react-icons/ai';
 
+
+
 const Footer = () => {
     return (
         <div >
@@ -14,10 +16,8 @@ const Footer = () => {
 
             <IonTabs >
 
-                {/* Important Tab show start */}
                 <IonRouterOutlet>
                 </IonRouterOutlet>
-                {/* Important Tab show end */}
 
 
                 <IonTabBar className='' slot="bottom">
@@ -53,6 +53,8 @@ const Footer = () => {
 
 
             </IonTabs>
+
+
 
         </div>
     )

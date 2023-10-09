@@ -188,36 +188,52 @@
     display: flex;
 }
 
-.HeaderContentMenuItemIcon{
+.HeaderContentMenuItemIcon {
     margin-right: 5px;
 }
-.HeaderContentMenuItemIconImg{
+
+.HeaderContentMenuItemIconImg {
     font-size: 25px;
     /* color: #6236FF; */
     color: #6236FF !important;
 
 }
-.HeaderContentMenuItemText{
+
+.HeaderContentMenuItemText {
     color: #27173E !important;
     display: flex;
 
 }
-.HeaderContentMenuItemArrow{
+
+.HeaderContentMenuItemArrow {
     margin-left: auto;
     display: flex;
 }
-.ContentMenuBox{
+
+.ContentMenuBoxNotis {
     width: 25px;
     height: 25px;
     font: 12px;
-    margin-left: 10px;
-    background-color: red;
+    margin-right: 3px;
+    background-color: #1DCC70 !important;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     color: white;
 }
+
+.ContentMenuBoxNotisRed {
+    width: 25px;
+    height: 25px;
+    font: 12px;
+    margin-right: 3px;
+    background-color: red;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+
+
 /* item  */
 
 /* IonContent menu end */

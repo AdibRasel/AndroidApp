@@ -1,31 +1,22 @@
 import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-
-import { MdNotificationsActive } from 'react-icons/md';
-import { FaUserAlt } from 'react-icons/fa';
-
 import "./Header.css"
 
 import HeaderLogo from "../assets/img/logo.png"
 
+import { MdNotificationsActive } from 'react-icons/md';
+import { FaUserAlt } from 'react-icons/fa';
 import { BiUserCircle } from 'react-icons/bi';
 import { GiPayMoney, GiReceiveMoney } from 'react-icons/gi';
 import { BsSend, BsFillCreditCard2FrontFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
-import { GrOverview } from 'react-icons/gr';
 import { SiPowerpages } from 'react-icons/si';
 import { TbComponents } from 'react-icons/tb';
 import { LiaCreditCardSolid } from 'react-icons/lia';
 import { CiSettings } from 'react-icons/ci';
 import { MdSupportAgent } from 'react-icons/md';
 import { BiLogIn } from 'react-icons/bi';
+import { LuView } from 'react-icons/lu';
 
-
-// import { IonList, IonItem, IonIcon, IonBadge } from '@ionic/react';
-// import { pieChartOutline, documentTextOutline, appsOutline, cardOutline, settingsOutline, chatbubbleOutline, logOutOutline } from 'ionicons/icons';
-
-
-import { IonModal, IonList, IonItem, IonIcon, IonBadge, IonButton } from '@ionic/react';
-import { pieChartOutline, documentTextOutline, appsOutline, cardOutline, settingsOutline, chatbubbleOutline, logOutOutline, addOutline, arrowDownOutline, arrowForwardOutline, closeOutline } from 'ionicons/icons';
 
 
 
@@ -38,13 +29,11 @@ const Header = () => {
         <div>
 
 
-
+            {/* Side Menu Start  */}
             <IonMenu contentId="main-content">
-
 
                 <IonHeader>
                     <IonToolbar>
-                        {/* <IonTitle>Menu Content</IonTitle> */}
                         <div className="MenuProfile">
 
                             <div className="MenuProfileTextImage">
@@ -57,45 +46,7 @@ const Header = () => {
                                     <span>4586580</span>
                                 </div>
                             </div>
-
-
-                            <div className="MenuBalance">
-
-                                <p>Balance</p>
-                                <h2>$ 2,562.50</h2>
-
-                                <div className="MenuBalanceItemBox">
-
-
-                                    <div className="MenuBalanceItem">
-                                        <GiPayMoney className='MenuBalanceItemIcon' />
-                                        <p>Deposit </p>
-                                    </div>
-
-                                    <div className="MenuBalanceItem">
-                                        <GiReceiveMoney className='MenuBalanceItemIcon' />
-                                        <p>Withdraw</p>
-                                    </div>
-
-                                    <div className="MenuBalanceItem">
-                                        <BsSend className='MenuBalanceItemIcon' />
-                                        <p>Send</p>
-                                    </div>
-
-                                    <div className="MenuBalanceItem">
-                                        <BsFillCreditCard2FrontFill className='MenuBalanceItemIcon' />
-                                        <p>Cards</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-
-
                         </div>
-
-
                     </IonToolbar>
                 </IonHeader>
 
@@ -103,6 +54,51 @@ const Header = () => {
 
                 {/* IonContent Menu start  */}
                 <IonContent>
+
+
+
+
+                    {/* Menu Ballance start  */}
+                    <div className="MenuBalance">
+
+                        <p>Balance</p>
+                        <h2>$ 2,562.50</h2>
+
+                        <div className="MenuBalanceItemBox">
+
+
+                            <div className="MenuBalanceItem">
+                                <GiPayMoney className='MenuBalanceItemIcon' />
+                                <p>Deposit </p>
+                            </div>
+
+                            <div className="MenuBalanceItem">
+                                <GiReceiveMoney className='MenuBalanceItemIcon' />
+                                <p>Withdraw</p>
+                            </div>
+
+                            <div className="MenuBalanceItem">
+                                <BsSend className='MenuBalanceItemIcon' />
+                                <p>Send</p>
+                            </div>
+
+                            <div className="MenuBalanceItem">
+                                <BsFillCreditCard2FrontFill className='MenuBalanceItemIcon' />
+                                <p>Cards</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    {/* Menu Ballance end  */}
+
+
+
+
+
+
+
 
 
                     {/* HeaderContentMenu start  */}
@@ -113,13 +109,15 @@ const Header = () => {
                         <div className="HeaderContentMenuItem">
 
                             <div className="HeaderContentMenuItemIcon">
-                                <GrOverview className='HeaderContentMenuItemIconImg' />
+                                <LuView className='HeaderContentMenuItemIconImg' />
                             </div>
                             <div className="HeaderContentMenuItemText">
-                            Overview <div className="ContentMenuBox">6</div>
+                                Overview
                             </div>
                             <div className="HeaderContentMenuItemArrow">
-                             <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
+                                <div className="ContentMenuBoxNotisRed">6</div>
+                                <div className="ContentMenuBoxNotis">6</div>
+                                <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
                             </div>
 
                         </div>
@@ -186,6 +184,7 @@ const Header = () => {
 
                     {/* HeaderContentMenu start  */}
                     <div className="HeaderContentMenu">
+
                         <p>Others</p>
 
                         {/* item  */}
@@ -236,14 +235,6 @@ const Header = () => {
                         </div>
                         {/* item  */}
 
-                       
-
-
-
-
-
-
-
                     </div>
                     {/* HeaderContentMenu end */}
 
@@ -252,18 +243,11 @@ const Header = () => {
                 </IonContent>
                 {/* IonContent Menu end  */}
 
-
-
-
-
-
-
-
             </IonMenu>
+            {/* Side Menu end  */}
 
 
-
-
+            {/* Header Menu Start  */}
             <IonPage id="main-content">
                 <IonHeader>
                     <div className='HeaderBox'>
@@ -302,6 +286,7 @@ const Header = () => {
 
 
             </IonPage>
+            {/* Header Menu end  */}
 
 
 

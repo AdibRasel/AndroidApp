@@ -1,0 +1,465 @@
+/* DashBoardHome start  */
+.HeaderColorMatch {
+    background-color: #6236FF !important;
+    height: 200px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    margin-top: -110px;
+}
+
+.HeaderDashBoardCardBox {
+    z-index: 10;
+    margin: auto;
+    margin-top: 35px;
+    width: 95%;
+}
+
+.HeaderDashBoardCard {
+    padding: 20px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.HeaderDashBoardCardLeft {
+    float: left;
+}
+
+.HeaderDashBoardCardLeft p {
+    margin: 0;
+    color: rgb(43, 40, 40);
+}
+
+.HeaderDashBoardCardLeft h2 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1em;
+    font-size: 32px;
+    color: rgb(46, 43, 43);
+}
+
+.HeaderDashBoardCardRight {
+    float: right;
+    font-size: 32px;
+    color: rgb(46, 43, 43);
+}
+
+
+.Dash {
+    border-top: 1px solid;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+
+.HeaderDashBoardCardWithdraw {
+    display: flex;
+}
+
+.HeaderDashBoardCardWithdrawList {
+    width: 25%;
+    text-align: center;
+}
+
+.HeaderDashBoardCardWithdrawListBox1 {
+    background-color: #FF396F !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 13px;
+}
+
+.HeaderDashBoardCardWithdrawListBox2 {
+    background-color: #6236FF;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 13px;
+}
+
+.HeaderDashBoardCardWithdrawListBox3 {
+    background-color: #1DCC70 !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 13px;
+}
+
+.HeaderDashBoardCardWithdrawListBox4 {
+    background-color: #FFB400 !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 13px;
+}
+
+.HeaderDashBoardCardWithdrawListBoxIcon {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.HeaderDashBoardCardWithdrawList p {
+    padding-top: 10px;
+    color: rgb(44, 44, 44);
+    padding-bottom: 20px;
+}
+
+/* DashBoardHome end */
+
+
+
+
+
+/* HomeIncomeExpenses start  */
+.HomeIncomeExpensesRow {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.HomeIncomeExpensesRowCol {
+    width: 50%;
+    background-color: white;
+    /* width: 200px;
+    height: 100px; */
+    margin: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #999;
+}
+
+.HomeIncomeExpensesRowCol p {
+    font-size: 13px;
+    color: #958d9e;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.4em;
+}
+
+.HomeIncomeExpensesRowCol h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+}
+
+.IncomeInfoColor1 {
+    color: #1DCC70 !important;
+}
+
+.IncomeInfoColor2 {
+    color: #FF396F !important;
+}
+
+.IncomeInfoColor3 {
+    color: #27173E;
+}
+
+.IncomeInfoColor4 {
+    color: #27173E;
+}
+
+/* HomeIncomeExpenses end */
+
+
+
+/* Home Transactions start  */
+.HomeTransactions {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.HomeTransactionsHeading {
+    overflow: hidden;
+}
+
+.HomeTransactionsHeadingTitle {
+    float: left;
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    line-height: 1em;
+    padding-right: 16px;
+    color: #27173E;
+}
+
+.HomeTransactionsHeadingView {
+    float: right;
+    color: rgb(98, 54, 255);
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+/* Home Transactions end */
+
+
+
+
+
+
+/* Home Cards start  */
+.HomeCardsBoxs {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.HomeCarouselItem1 {
+    background-color: #6236FF;
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.HomeCarouselItem2 {
+    background-color: #FF396F;
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.HomeCarouselItem3 {
+    background-color: #FFB400;
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.HomeCarouselItem4 {
+    background-color: #1DCC70;
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.HomeCarouselItemSpan {
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    line-height: 1em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 500;
+    color: white;
+}
+
+.HomeCarouselItemh2 {
+    font-weight: 700;
+    color: #fff;
+    margin-top: 7px;
+    font-size: 24px;
+}
+
+/* Home Cards end  */
+
+
+
+
+
+
+/* Home Send Money start  */
+.HomeSendMoney {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.HomeSendMoneyItem {
+    background-color: #6236FF;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.HomeSendMoneySwiperSlider {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.HomeSendMoneySwiperSlider img {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.HomeSendMoneySwiperSlider h1 {
+    margin: auto;
+    display: block;
+    font-size: 11px;
+    color: #27173E;
+    line-height: 1.3em;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Home Send Money end  */
+
+
+
+
+
+
+
+
+
+/* Home Monthly Bills start  */
+.HomeMonthlyBills {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.MoheMonthlyBillsBox {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #929292;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.MoheMonthlyBillsBoxIcon {
+    font-size: 50px;
+    color: #0d6efd;
+}
+
+.MoheMonthlyBillsBox h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #27173E;
+    padding: 5px;
+    margin: 0px;
+}
+
+.MoheMonthlyBillsBox span {
+    padding-top: 0px;
+}
+
+.MoheMonthlyBillsBox button {
+    margin-top: 15px;
+}
+
+/* Home Monthly Bills end  */
+
+
+
+
+
+/* Home Saving Goals start */
+.HomeSavingGoals {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.HomeSavingGoalSide {
+    width: 90%;
+}
+
+/* Home Saving Goals end */
+
+
+
+
+/* Home Lastest News start  */
+.HomeLastestNews {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.HomeLastestNewsBox{
+    width: 200px;
+    height: 270px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #333;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.HomeLastestNewsImage{
+
+}
+.HomeLastestNewsImage img{
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.HomeLastestNewsBox p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4em;
+    height: 67px;
+    overflow: hidden;
+}
+
+/* Home Lastest News end  */
+
+
