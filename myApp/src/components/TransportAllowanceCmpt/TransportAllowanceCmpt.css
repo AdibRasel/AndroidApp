@@ -1,0 +1,31 @@
+.Transport_Allowance_Cmpnt {
+    margin-top: 50px;
+}
+
+
+.FromBox {
+    background-color: white;
+    padding: 5px;
+}
+
+.FromBox p {
+    color: black;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+
+.inputTitle {
+    color: rgb(68 59 59);
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+.TravelPlaces {
+    width: 90%;
+    margin: auto;
+}

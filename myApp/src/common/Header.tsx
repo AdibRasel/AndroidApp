@@ -1,4 +1,5 @@
 import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { NavLink } from 'react-router-dom';
 
 import "./Header.css"
 
@@ -169,6 +170,26 @@ const Header = () => {
                             </div>
 
                         </div>
+                        {/* item  */}
+
+
+
+                        {/* item  */}
+                        <NavLink to="/TransportAllowance" >
+                            <div className="HeaderContentMenuItem">
+
+                                <div className="HeaderContentMenuItemIcon">
+                                    <LiaCreditCardSolid className='HeaderContentMenuItemIconImg' />
+                                </div>
+                                <div className="HeaderContentMenuItemText">
+                                    Transport Allowance
+                                </div>
+                                <div className="HeaderContentMenuItemArrow">
+                                    <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
+                                </div>
+
+                            </div>
+                        </NavLink>
                         {/* item  */}
 
 

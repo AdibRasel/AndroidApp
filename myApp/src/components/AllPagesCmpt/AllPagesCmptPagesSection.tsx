@@ -10,16 +10,34 @@ import { FaMoneyBills } from 'react-icons/fa6';
 import { MdNotificationsActive } from 'react-icons/md';
 import { GiSettingsKnobs } from 'react-icons/gi';
 
+import { NavLink } from 'react-router-dom';
 
 const AllPagesCmptPagesSection = () => {
     return (
         <div className='AllPagesCmptSection'>
 
-                <p>App Pages</p>
+            <p>App Pages</p>
 
 
             {/* Header Other Menu start  */}
             <div className="HeaderContentMenu">
+
+
+                {/* item  */}
+                <NavLink to="/TransportAllowance" >
+                    <div className="HeaderContentMenuItem">
+                        <div className="HeaderContentMenuItemIcon">
+                            <BiTransferAlt className='HeaderContentMenuItemIconImg' />
+                        </div>
+                        <div className="HeaderContentMenuItemText">
+                            Transport Allowance
+                        </div>
+                        <div className="HeaderContentMenuItemArrow">
+                            <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
+                        </div>
+                    </div>
+                </NavLink>
+                {/* item  */}
 
 
                 {/* item  */}
@@ -37,6 +55,7 @@ const AllPagesCmptPagesSection = () => {
 
                 </div>
                 {/* item  */}
+
 
                 {/* item  */}
                 <div className="HeaderContentMenuItem">

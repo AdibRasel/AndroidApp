@@ -17,6 +17,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // index css 
 import "./assets/css/index.css"
+import TransportAllowancePg from './pages/TransportAllowancePg/TransportAllowancePg';
+import TravelPlaces from './components/TransportAllowanceCmpt/From/TravelPlaces/TravelPlaces';
+import TravelVisit from './components/TransportAllowanceCmpt/From/TravelVisit/TravelVisit';
 
 setupIonicReact();
 
@@ -32,6 +35,9 @@ const App: React.FC = () => (
         <Route exact path="/Components"> <ComponentsPg /> </Route>
         <Route exact path="/MyCards"> <MyCardsPg /> </Route>
         <Route exact path="/Settings"> <SettingsPg /> </Route> 
+        <Route exact path="/TransportAllowance"> <TransportAllowancePg /> </Route> 
+        <Route exact path="/TravelPlaces"> <TravelPlaces /> </Route> 
+        <Route exact path="/TravelVisit"> <TravelVisit /> </Route> 
       </Switch>
     </IonReactRouter>
   </IonApp>
