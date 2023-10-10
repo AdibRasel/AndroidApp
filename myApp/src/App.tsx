@@ -1,4 +1,4 @@
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import {
   IonApp,
   setupIonicReact
@@ -15,26 +15,21 @@ import SettingsPg from './pages/SettingsPg/SettingsPg';
 // bootstrap css 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import "./assets/css/index.css"
-
-
-
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-
-
-      <Route exact path="/home"> <HomePg /> </Route>
-      <Route exact path="/"> <Redirect to="/home" /> </Route>
-
-      <Route exact path="/Overview"> <OverviewPg /> </Route>
-      <Route exact path="/AllPages"> <AllPagesPg /> </Route>
-      <Route exact path="/Components"> <ComponentsPg /> </Route>
-      <Route exact path="/MyCards"> <MyCardsPg /> </Route>
-      <Route exact path="/Settings"> <SettingsPg /> </Route> 
-
+      <Switch>
+        <Route exact path="/home"> <HomePg /> </Route>
+        <Route exact path="/"> <Redirect to="/home" /> </Route>
+        
+        <Route exact path="/Overview"> <OverviewPg /> </Route>
+        <Route exact path="/AllPages"> <AllPagesPg /> </Route>
+        <Route exact path="/Components"> <ComponentsPg /> </Route>
+        <Route exact path="/MyCards"> <MyCardsPg /> </Route>
+        <Route exact path="/Settings"> <SettingsPg /> </Route> 
+      </Switch>
     </IonReactRouter>
   </IonApp>
 );

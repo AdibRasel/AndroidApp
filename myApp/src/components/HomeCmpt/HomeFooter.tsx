@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeFooter = () => {
     return (
-        <div>
+        <div className='HomeFooter'>
 
 
             <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
