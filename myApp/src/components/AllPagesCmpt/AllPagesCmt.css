@@ -1,0 +1,72 @@
+.AllPagesCmptSection {
+    width: 95%;
+    margin: auto;
+    box-shadow: 0px 0px 10px #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.AllPagesCmptSection p {
+    margin: 0;
+}
+
+
+
+/* Cryptocurrency start  */
+.CryptocurrencyPageIcon {
+    margin-right: 12px;
+    width: 20px;
+}
+.CryptocurrencyPageIcon svg {
+    background-color: rgb(9, 70, 238) !important;
+    padding: 3px;
+    font-size: 28px;
+    border-radius: 3px;
+    color: white !important;
+}
+
+.RightArroAllPagesCmpt {
+    color: rgb(9, 70, 238);
+}
+/* Cryptocurrency end */
+
+
+
+/* All Pages Cmpt Authentication start  */
+.AllPagesCmptAuthenticatonIcon{
+    margin-right: 12px;
+    width: 20px;
+}
+.AllPagesCmptAuthenticatonIcon svg{
+    background-color: #05D0A4 !important;
+    font-size: 28px;
+    color:white;
+    border-radius: 3px;
+}
+.AllPagesCmptAuthenticatonRightArrow {
+    color: #05D0A4 !important;
+    font-size: 25px;
+}
+/* All Pages Cmpt Authentication end */
+
+
+
+/* All Pages CmptOthers start  */
+.AllPagesCmptOthersIcon {
+    margin-right: 12px;
+    width: 20px;
+}
+.AllPagesCmptOthersIcon svg {
+    background-color: #dc3545 !important;
+    padding: 3px;
+    font-size: 28px;
+    border-radius: 3px;
+    color: white !important;
+}
+
+.AllPagesCmptOthersIconRightArraw {
+    color:#dc3545 !important;
+}
+/* All Pages CmptOthers end */

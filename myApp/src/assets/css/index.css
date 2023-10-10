@@ -1,5 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #EDEDF5;
+}
+a{
+    text-decoration: none;
+}
+.a{
+    text-decoration: none;
+}
+.a a{
+    text-decoration: none;
 }

@@ -13,7 +13,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Footer = () => {
     return (
-        <div >
+        <div className='BottomTabFooter'>
 
 
             <Navbar expand="lg" className=" fixed-bottom BottomTabMenu">

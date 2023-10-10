@@ -101,7 +101,7 @@ const Header = () => {
 
 
 
-                    {/* HeaderContentMenu start  */}
+                    {/* Header Menu start  */}
                     <div className="HeaderContentMenu">
                         <p>Menu</p>
 
@@ -178,11 +178,11 @@ const Header = () => {
 
 
                     </div>
-                    {/* HeaderContentMenu end */}
+                    {/* Header Menu end */}
 
 
 
-                    {/* HeaderContentMenu start  */}
+                    {/* Header Other Menu start  */}
                     <div className="HeaderContentMenu">
 
                         <p>Others</p>
@@ -236,7 +236,7 @@ const Header = () => {
                         {/* item  */}
 
                     </div>
-                    {/* HeaderContentMenu end */}
+                    {/* Header Other Menu end */}
 
 
 
