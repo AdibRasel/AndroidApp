@@ -22,26 +22,17 @@ import HomeLastestNews from '../HomeCmpt/HomeLastestNews';
 const TransportAllowanceCmpt = () => {
 
     return (
-        <div>
+        <div className='AllPagesCmptSection'>
+
+            <p className='text-center mb-2'>Transport Allowance</p>
 
 
 
-            <IonHeader>
-                <IonToolbar>
-                    <IonTitle className='text-center'>Transport Allowance</IonTitle>
-                </IonToolbar>
-            </IonHeader>
-
-
-
-
-
-
-            <Card>
+            <Card className=''>
                 <Card.Img variant="top" src={TravelImage} />
                 <Card.Body>
                     <Card.Title>Transport Allowance</Card.Title>
-                    <Card.Text>
+                    <Card.Text className='mb-2'>
                         This is a wider card with supporting text below as a natural lead-in
                         to additional content. This content is a little bit longer.
                     </Card.Text>
@@ -65,22 +56,6 @@ const TransportAllowanceCmpt = () => {
 
 
             <HomeLastestNews />
-
-
-
-
-
-            {/* <TravelPlaces />
-
-
-
-
-            <TravelVisit /> */}
-
-
-
-
-
 
 
 

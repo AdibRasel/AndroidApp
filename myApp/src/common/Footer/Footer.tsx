@@ -2,8 +2,9 @@ import { NavLink } from 'react-router-dom';
 
 import "./Footer.css"
 
-import { ImHome } from 'react-icons/im';
-import { SiPagekit } from 'react-icons/si';
+import { AiOutlineHome } from 'react-icons/ai';
+import { TfiSettings } from 'react-icons/tfi';
+import { ImPagebreak } from 'react-icons/im';
 import { TbComponents } from 'react-icons/tb';
 import { AiOutlineCreditCard, AiFillSetting } from 'react-icons/ai';
 
@@ -22,14 +23,14 @@ const Footer = () => {
 
                     <div className="BottomTabMenuItem">
                         <NavLink to="/home" className="">
-                            <ImHome className='FooterIcon' /> <br />
+                            <AiOutlineHome className='FooterIcon' /> <br />
                             Home
                         </NavLink>
                     </div>
 
                     <div className="BottomTabMenuItem">
                         <NavLink to="/AllPages">
-                            <SiPagekit className='FooterIcon' /> <br />
+                            <ImPagebreak className='FooterIcon' /> <br />
                             Page
                         </NavLink>
                     </div>
@@ -50,7 +51,7 @@ const Footer = () => {
 
                     <div className="BottomTabMenuItem">
                         <NavLink to="/Settings">
-                        <AiFillSetting className='FooterIcon' /> <br />
+                        <TfiSettings className='FooterIcon' /> <br />
                             Settings
                         </NavLink>
                     </div>

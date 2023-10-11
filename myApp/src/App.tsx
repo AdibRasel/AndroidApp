@@ -22,6 +22,7 @@ import TravelPlacesForm from './components/TransportAllowanceCmpt/From/TravelPla
 import TravelVisitForm from './components/TransportAllowanceCmpt/From/TravelVisit/TravelVisitForm';
 import TransactionsPg from './pages/Transactions Pg/TransactionsPg';
 import TransactionDetails from './components/TransactionsCmpt/TransactionDetails/TransactionDetails';
+import NotificationPg from './pages/NotificationPg/NotificationPg';
 
 setupIonicReact();
 
@@ -42,6 +43,7 @@ const App: React.FC = () => (
         <Route exact path="/TravelVisit"> <TravelVisitForm /> </Route> 
         <Route exact path="/Transactions"> <TransactionsPg /> </Route> 
         <Route exact path="/TransactionDetails"> <TransactionDetails /> </Route> 
+        <Route exact path="/Notification"> <NotificationPg /> </Route> 
       </Switch>
     </IonReactRouter>
   </IonApp>

@@ -13,9 +13,6 @@ import { MdOutlineDomainVerification } from 'react-icons/md';
 import { BsQrCode } from 'react-icons/bs';
 
 
-import Card from 'react-bootstrap/Card';
-
-
 const ComponentsCmpt = () => {
   return (
     <div>
@@ -32,20 +29,6 @@ const ComponentsCmpt = () => {
 
 
 
-      <Card>
-        <Card.Header>Urban IT Solution</Card.Header>
-        <Card.Body>
-          <blockquote className="blockquote mb-0">
-            <p>
-              {' '}
-              Reusable Components{' '}
-            </p>
-            <footer className="blockquote-footer">
-              Finapp comes with many components you may need for your project. You can use them over and over again.
-            </footer>
-          </blockquote>
-        </Card.Body>
-      </Card>
 
 
 
@@ -54,10 +37,9 @@ const ComponentsCmpt = () => {
 
 
 
+      <div className='AllPagesCmptSection'>
 
-      <div className=''>
-
-
+        <p>All Components</p>
 
         {/* Header Other Menu start  */}
         <div className="HeaderContentMenu">
@@ -70,7 +52,7 @@ const ComponentsCmpt = () => {
               <BiSolidLogIn />
             </div>
             <div className="HeaderContentMenuItemText">
-            Accordion
+              Accordion
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -86,7 +68,7 @@ const ComponentsCmpt = () => {
               <RiLockPasswordFill />
             </div>
             <div className="HeaderContentMenuItemText">
-            Action Sheet
+              Action Sheet
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -102,7 +84,7 @@ const ComponentsCmpt = () => {
               <MdOutlineDomainVerification />
             </div>
             <div className="HeaderContentMenuItemText">
-            Add to Home
+              Add to Home
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -118,7 +100,7 @@ const ComponentsCmpt = () => {
               <BsQrCode />
             </div>
             <div className="HeaderContentMenuItemText">
-            Alert
+              Alert
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -134,7 +116,7 @@ const ComponentsCmpt = () => {
               <BiSolidLogIn />
             </div>
             <div className="HeaderContentMenuItemText">
-            App Bottom Menu
+              App Bottom Menu
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -150,7 +132,7 @@ const ComponentsCmpt = () => {
               <RiLockPasswordFill />
             </div>
             <div className="HeaderContentMenuItemText">
-            App Header
+              App Header
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -166,7 +148,7 @@ const ComponentsCmpt = () => {
               <MdOutlineDomainVerification />
             </div>
             <div className="HeaderContentMenuItemText">
-            Badges
+              Badges
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -182,7 +164,7 @@ const ComponentsCmpt = () => {
               <BsQrCode />
             </div>
             <div className="HeaderContentMenuItemText">
-            Buttons
+              Buttons
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -198,7 +180,7 @@ const ComponentsCmpt = () => {
               <BiSolidLogIn />
             </div>
             <div className="HeaderContentMenuItemText">
-            Cards
+              Cards
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -214,7 +196,7 @@ const ComponentsCmpt = () => {
               <RiLockPasswordFill />
             </div>
             <div className="HeaderContentMenuItemText">
-            Carousel - Slider
+              Carousel - Slider
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -230,7 +212,7 @@ const ComponentsCmpt = () => {
               <MdOutlineDomainVerification />
             </div>
             <div className="HeaderContentMenuItemText">
-            Charts
+              Charts
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -246,7 +228,7 @@ const ComponentsCmpt = () => {
               <BsQrCode />
             </div>
             <div className="HeaderContentMenuItemText">
-            Checkbox
+              Checkbox
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -262,7 +244,7 @@ const ComponentsCmpt = () => {
               <BiSolidLogIn />
             </div>
             <div className="HeaderContentMenuItemText">
-            Chips
+              Chips
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -278,7 +260,7 @@ const ComponentsCmpt = () => {
               <RiLockPasswordFill />
             </div>
             <div className="HeaderContentMenuItemText">
-            Content Boxes
+              Content Boxes
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -294,7 +276,7 @@ const ComponentsCmpt = () => {
               <MdOutlineDomainVerification />
             </div>
             <div className="HeaderContentMenuItemText">
-            Cookies Box
+              Cookies Box
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />
@@ -310,7 +292,7 @@ const ComponentsCmpt = () => {
               <BsQrCode />
             </div>
             <div className="HeaderContentMenuItemText">
-            Dialog
+              Dialog
             </div>
             <div className="HeaderContentMenuItemArrow">
               <BsFillArrowRightCircleFill className='AllPagesCmptAuthenticatonRightArrow' />

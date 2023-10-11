@@ -102,20 +102,29 @@ const Header = () => {
 
                         <div className="HeaderBoxCenter">
 
-                            <div className="HeaderCenter">
-                                <img src={HeaderLogo} alt="" />
-                            </div>
+                            <NavLink to="/" >
+                                <div className="HeaderCenter">
+                                    <img src={HeaderLogo} alt="" />
+                                </div>
+                            </NavLink>
 
                             <div className="HeaderRight">
 
-                                <div className="HeaderNotification">
-                                    <MdNotificationsActive className='NotificationAlart' />
-                                    <span className='NotificationBage'>4</span>
-                                </div>
-                                <div className="HeaderProfile">
-                                    <FaUserAlt className='NotificationAlart' />
-                                    <span className='NotificationBage'>6</span>
-                                </div>
+
+                                <NavLink to="/Notification" >
+                                    <div className="HeaderNotification">
+                                        <MdNotificationsActive className='NotificationAlart' />
+                                        <span className='NotificationBage'>4</span>
+                                    </div>
+                                </NavLink>
+
+                                <NavLink to="/Settings" >
+                                    <div className="HeaderProfile">
+                                        <FaUserAlt className='NotificationAlart' />
+                                        <span className='NotificationBage'>6</span>
+                                    </div>
+                                </NavLink>
+
                             </div>
                         </div>
 
