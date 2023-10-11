@@ -4,11 +4,11 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-import Header from '../../../../common/Header';
-import Footer from '../../../../common/Footer';
+import Header from '../../../../common/Header/Header';
+import Footer from '../../../../common/Footer/Footer';
 
 
-const TravelVisit = () => {
+const TravelVisitForm = () => {
     return (
         <div>
 
@@ -77,4 +77,4 @@ const TravelVisit = () => {
     )
 }
 
-export default TravelVisit
+export default TravelVisitForm

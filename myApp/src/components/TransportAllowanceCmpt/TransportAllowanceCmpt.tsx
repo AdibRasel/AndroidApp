@@ -5,8 +5,8 @@ import "./TransportAllowanceCmpt.css"
 import { IonHeader, IonToolbar, IonTitle } from '@ionic/react';
 
 
-import TravelPlaces from './From/TravelPlaces/TravelPlaces';
-import TravelVisit from './From/TravelVisit/TravelVisit';
+import TravelPlaces from './From/TravelPlaces/TravelPlacesForm';
+import TravelVisit from './From/TravelVisit/TravelVisitForm';
 
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';

@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../../common/Header'
+import Header from '../../common/Header/Header'
 import MyCardsCmpt from '../../components/MyCardsCmpt/MyCardsCmpt'
-import Footer from '../../common/Footer'
+import Footer from '../../common/Footer/Footer'
 
 const MyCardsPg = () => {
   return (

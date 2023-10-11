@@ -3,11 +3,10 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 import { BiTransferAlt } from 'react-icons/bi';
 import { CgDetailsMore } from 'react-icons/cg';
-import { MdDomainVerification } from 'react-icons/md';
+import { MdDomainVerification, MdEmojiTransportation, MdNotificationsActive } from 'react-icons/md';
 import { LiaCreditCardSolid } from 'react-icons/lia';
 import { BsSave2Fill } from 'react-icons/bs';
 import { FaMoneyBills } from 'react-icons/fa6';
-import { MdNotificationsActive } from 'react-icons/md';
 import { GiSettingsKnobs } from 'react-icons/gi';
 
 import { NavLink } from 'react-router-dom';
@@ -27,7 +26,7 @@ const AllPagesCmptPagesSection = () => {
                 <NavLink to="/TransportAllowance" >
                     <div className="HeaderContentMenuItem">
                         <div className="HeaderContentMenuItemIcon">
-                            <BiTransferAlt className='HeaderContentMenuItemIconImg' />
+                            <MdEmojiTransportation className='HeaderContentMenuItemIconImg' />
                         </div>
                         <div className="HeaderContentMenuItemText">
                             Transport Allowance
@@ -41,36 +40,40 @@ const AllPagesCmptPagesSection = () => {
 
 
                 {/* item  */}
-                <div className="HeaderContentMenuItem">
+                <NavLink to="/Transactions" >
+                    <div className="HeaderContentMenuItem">
 
-                    <div className="HeaderContentMenuItemIcon">
-                        <BiTransferAlt className='HeaderContentMenuItemIconImg' />
-                    </div>
-                    <div className="HeaderContentMenuItemText">
-                        Transactions
-                    </div>
-                    <div className="HeaderContentMenuItemArrow">
-                        <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
-                    </div>
+                        <div className="HeaderContentMenuItemIcon">
+                            <BiTransferAlt className='HeaderContentMenuItemIconImg' />
+                        </div>
+                        <div className="HeaderContentMenuItemText">
+                            Transactions
+                        </div>
+                        <div className="HeaderContentMenuItemArrow">
+                            <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
+                        </div>
 
-                </div>
+                    </div>
+                </NavLink>
                 {/* item  */}
 
 
                 {/* item  */}
+                <NavLink to="/TransactionDetails" >
                 <div className="HeaderContentMenuItem">
 
                     <div className="HeaderContentMenuItemIcon">
                         <CgDetailsMore className='HeaderContentMenuItemIconImg' />
                     </div>
                     <div className="HeaderContentMenuItemText">
-                        Transaction Detail
+                        Transaction Details
                     </div>
                     <div className="HeaderContentMenuItemArrow">
                         <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
                     </div>
 
                 </div>
+                </NavLink>
                 {/* item  */}
 
                 {/* item  */}
@@ -90,6 +93,7 @@ const AllPagesCmptPagesSection = () => {
                 {/* item  */}
 
                 {/* item  */}
+                <NavLink to="/MyCards" >
                 <div className="HeaderContentMenuItem">
 
                     <div className="HeaderContentMenuItemIcon">
@@ -103,6 +107,7 @@ const AllPagesCmptPagesSection = () => {
                     </div>
 
                 </div>
+                </NavLink>
                 {/* item  */}
 
                 {/* item  */}
@@ -170,6 +175,7 @@ const AllPagesCmptPagesSection = () => {
                 {/* item  */}
 
                 {/* item  */}
+                <NavLink to="/Settings" >
                 <div className="HeaderContentMenuItem">
 
                     <div className="HeaderContentMenuItemIcon">
@@ -183,6 +189,7 @@ const AllPagesCmptPagesSection = () => {
                     </div>
 
                 </div>
+                </NavLink>
                 {/* item  */}
 
             </div>

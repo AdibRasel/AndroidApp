@@ -18,8 +18,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // index css 
 import "./assets/css/index.css"
 import TransportAllowancePg from './pages/TransportAllowancePg/TransportAllowancePg';
-import TravelPlaces from './components/TransportAllowanceCmpt/From/TravelPlaces/TravelPlaces';
-import TravelVisit from './components/TransportAllowanceCmpt/From/TravelVisit/TravelVisit';
+import TravelPlacesForm from './components/TransportAllowanceCmpt/From/TravelPlaces/TravelPlacesForm';
+import TravelVisitForm from './components/TransportAllowanceCmpt/From/TravelVisit/TravelVisitForm';
+import TransactionsPg from './pages/Transactions Pg/TransactionsPg';
+import TransactionDetails from './components/TransactionsCmpt/TransactionDetails/TransactionDetails';
 
 setupIonicReact();
 
@@ -36,8 +38,10 @@ const App: React.FC = () => (
         <Route exact path="/MyCards"> <MyCardsPg /> </Route>
         <Route exact path="/Settings"> <SettingsPg /> </Route> 
         <Route exact path="/TransportAllowance"> <TransportAllowancePg /> </Route> 
-        <Route exact path="/TravelPlaces"> <TravelPlaces /> </Route> 
-        <Route exact path="/TravelVisit"> <TravelVisit /> </Route> 
+        <Route exact path="/TravelPlaces"> <TravelPlacesForm /> </Route> 
+        <Route exact path="/TravelVisit"> <TravelVisitForm /> </Route> 
+        <Route exact path="/Transactions"> <TransactionsPg /> </Route> 
+        <Route exact path="/TransactionDetails"> <TransactionDetails /> </Route> 
       </Switch>
     </IonReactRouter>
   </IonApp>

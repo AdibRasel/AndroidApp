@@ -5,13 +5,13 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
-import Header from '../../../../common/Header';
-import Footer from '../../../../common/Footer';
+import Header from '../../../../common/Header/Header';
+import Footer from '../../../../common/Footer/Footer';
 
 
 
 
-const TravelPlaces = () => {
+const TravelPlacesForm = () => {
     return (
         <div>
 
@@ -80,4 +80,4 @@ const TravelPlaces = () => {
     )
 }
 
-export default TravelPlaces
+export default TravelPlacesForm
