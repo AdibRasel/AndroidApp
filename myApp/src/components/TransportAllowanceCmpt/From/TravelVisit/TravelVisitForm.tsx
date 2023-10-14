@@ -22,14 +22,29 @@ const TravelVisitForm = () => {
             <hr />
 
             <Form>
+
+
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <span className='inputTitle'>Office Name   </span>
                     <Form.Control type="text" placeholder="Office Name" />
                 </Form.Group>
 
+
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <span className='inputTitle'>Office Address </span>
                     <Form.Control type="text" placeholder="Office Address" />
+                </Form.Group>
+
+
+                <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
+                    <span className='inputTitle'>Office Email </span>
+                    <Form.Control type="text" placeholder="Office Email" />
+                </Form.Group>
+
+
+                <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
+                    <span className='inputTitle'>Office Mobile Number </span>
+                    <Form.Control type="text" placeholder="Office Mobile Number" />
                 </Form.Group>
 
 
@@ -40,16 +55,28 @@ const TravelVisitForm = () => {
 
 
 
+                <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
+                    <span className='inputTitle'>Person Address</span>
+                    <Form.Control type="text" placeholder="Person Address" />
+                </Form.Group>
+
+
 
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
-                    <span className='inputTitle'>Mobile </span>
-                    <Form.Control type="number" placeholder="Mobile" />
+                    <span className='inputTitle'>Person Email </span>
+                    <Form.Control type="number" placeholder="Email" />
                 </Form.Group>
 
 
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
-                    <span className='inputTitle'>Email Address</span>
-                    <Form.Control type="text" placeholder="Email Address" />
+                    <span className='inputTitle'>Person Mobile Number</span>
+                    <Form.Control type="text" placeholder="Person Mobile Number" />
+                </Form.Group>
+                
+                
+                <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
+                    <span className='inputTitle'>Remarks</span>
+                    <Form.Control type="text" placeholder="Remarks" />
                 </Form.Group>
 
 

@@ -1,0 +1,21 @@
+var jwt = require("jsonwebtoken");
+module.exports=(Req, Res, Next)=>{
+    let Token = Req.headers['token'];
+    jwt.verify(Token, "SecretKey123456789", function (error, decoded){
+        if(error){
+            console.log(Token)
+            Res.status(401).json({status:"Unauthorized", Token:Token})
+        }else{
+
+            let Email=decoded['data'];
+
+            console.log(Email);
+            console.log(decoded);
+
+            Req.headers.Email = Email;
+
+            Next();
+
+        }
+    })
+}

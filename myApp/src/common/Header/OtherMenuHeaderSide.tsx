@@ -10,7 +10,7 @@ import { BiLogIn } from 'react-icons/bi';
 
 const OtherMenuHeaderSide = () => {
     return (
-        <div>
+        <div className='OtherMenuHeaderSideEnd'>
 
 
 
@@ -57,19 +57,21 @@ const OtherMenuHeaderSide = () => {
                 {/* item  */}
 
                 {/* item  */}
-                <div className="HeaderContentMenuItem">
+                <NavLink to="/Login" >
+                    <div className="HeaderContentMenuItem">
 
-                    <div className="HeaderContentMenuItemIcon">
-                        <BiLogIn className='HeaderContentMenuItemIconImg' />
-                    </div>
-                    <div className="HeaderContentMenuItemText">
-                        Log out
-                    </div>
-                    <div className="HeaderContentMenuItemArrow">
-                        <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
-                    </div>
+                        <div className="HeaderContentMenuItemIcon">
+                            <BiLogIn className='HeaderContentMenuItemIconImg' />
+                        </div>
+                        <div className="HeaderContentMenuItemText">
+                            Log out
+                        </div>
+                        <div className="HeaderContentMenuItemArrow">
+                            <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
+                        </div>
 
-                </div>
+                    </div>
+                </NavLink>
                 {/* item  */}
 
             </div>

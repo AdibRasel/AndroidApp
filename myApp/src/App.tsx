@@ -16,6 +16,8 @@ import SettingsPg from './pages/SettingsPg/SettingsPg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // index css 
+// Finapp Css Linkup
+// import "./assets/css/style.css"
 import "./assets/css/index.css"
 import TransportAllowancePg from './pages/TransportAllowancePg/TransportAllowancePg';
 import TravelPlacesForm from './components/TransportAllowanceCmpt/From/TravelPlaces/TravelPlacesForm';
@@ -23,6 +25,8 @@ import TravelVisitForm from './components/TransportAllowanceCmpt/From/TravelVisi
 import TransactionsPg from './pages/Transactions Pg/TransactionsPg';
 import TransactionDetails from './components/TransactionsCmpt/TransactionDetails/TransactionDetails';
 import NotificationPg from './pages/NotificationPg/NotificationPg';
+import RegisterPg from './pages/RegisterPg/RegisterPg';
+import LoginPg from './pages/LoginPg/LoginPg';
 
 setupIonicReact();
 
@@ -44,6 +48,13 @@ const App: React.FC = () => (
         <Route exact path="/Transactions"> <TransactionsPg /> </Route> 
         <Route exact path="/TransactionDetails"> <TransactionDetails /> </Route> 
         <Route exact path="/Notification"> <NotificationPg /> </Route> 
+
+
+
+        <Route exact path="/Login"> <LoginPg /> </Route> 
+        <Route exact path="/Register"> <RegisterPg /> </Route> 
+
+
       </Switch>
     </IonReactRouter>
   </IonApp>

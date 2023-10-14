@@ -1,0 +1,16 @@
+.RegisterCmptBox{
+    /* background-color: #EDEDF5; */
+    margin: 0;
+    padding: 0;
+    /* height: 700px; */
+}
+.LoginBtnRegistration{
+    width: 97%;
+    margin-top: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.LoginBtnRegistrationTxt{
+    text-align: right;
+    color: #0d6efd;
+}

@@ -216,7 +216,7 @@ const SettingsCmptItems = () => {
 
 
             {/* item  */}
-            <NavLink to="/home" >
+            <NavLink to="/Login" >
                 <div className="HeaderContentMenuItem">
 
                     <div className="HeaderContentMenuItemIcon">
@@ -236,7 +236,7 @@ const SettingsCmptItems = () => {
 
 
             {/* item  */}
-            <NavLink to="/home" >
+            <NavLink to="/Login" >
                 <div className="HeaderContentMenuItem">
 
                     <div className="HeaderContentMenuItemIcon">
