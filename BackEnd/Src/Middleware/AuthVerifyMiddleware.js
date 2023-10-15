@@ -7,10 +7,11 @@ module.exports=(Req, Res, Next)=>{
             Res.status(401).json({status:"Unauthorized", Token:Token})
         }else{
 
-            let Email=decoded['data'];
+            let Email=decoded['UserEmail'];
 
-            console.log(Email);
-            console.log(decoded);
+            // console.log(Email);
+            // console.log(decoded);
+            console.log( "This user is currently using the app:- " + Email);
 
             Req.headers.Email = Email;
 

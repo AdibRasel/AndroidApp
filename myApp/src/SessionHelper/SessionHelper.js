@@ -1,7 +1,7 @@
 class SessionHelper{
     
-    setToken(token){
-        localStorage.setItem("token", token)
+    setToken(){
+        localStorage.setItem("token", "token")
     }
     getToken(){
        return localStorage.getItem("token")
@@ -10,10 +10,10 @@ class SessionHelper{
 
 
     setUserDetails(UserDetails){
-        localStorage.setItem("UserDetails", JSON.stringify(UserDetails))
+        localStorage.setItem("userDetails", JSON.stringify(UserDetails))
     }
     getUserDetails(){
-        return JSON.parse(localStorage.getItem("UserDetails"))
+        return JSON.parse(localStorage.getItem("userDetails"))
     }
 
 
@@ -35,5 +35,6 @@ class SessionHelper{
     }
 
 }
+
 
 export const {setEmail, getEmail, setOTP, getOTP, setToken, getToken, setUserDetails, getUserDetails}=new SessionHelper();

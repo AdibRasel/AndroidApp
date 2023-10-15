@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import LoginBtn from './LoginBtn';
 import './style.css';
 import { NavLink } from 'react-router-dom';
+import { useHistory } from 'react-router';
 // import { useNavigate } from 'react-router-dom';
 
 import { UserRegister } from "../../apiService/UserAPIService.js"
@@ -15,6 +16,7 @@ const RegisterCmpt: React.FC = () => {
     const MobileRef = useRef<HTMLInputElement>(null);
     const EmailRef = useRef<HTMLInputElement>(null);
     const PasswordRef = useRef<HTMLInputElement>(null);
+    const history = useHistory(); // Initialize useHistory
 
     // let navigate = useNavigate();
 
@@ -55,8 +57,7 @@ const RegisterCmpt: React.FC = () => {
 
                     if (Res === true) {
                         alert("Register Success")
-                        // navigate('/login');
-                        console.log(Res)
+                        history.push('/Login');
 
 
                     } else {
@@ -69,17 +70,6 @@ const RegisterCmpt: React.FC = () => {
 
                 })
 
-
-
-
-
-
-
-
-
-
-                // Proceed with registration
-                console.log("Registration successful.");
             }
         }
     };

@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
+import { Storage } from '@capacitor/storage';
 import { NavLink } from 'react-router-dom';
+import { useHistory } from 'react-router';
 import {LoginRequest} from "../../apiService/UserAPIService"
 import "./LoginCmpt.css"
 
@@ -7,6 +9,7 @@ const LoginCmpt = () => {
 
    const EmailRef = useRef<HTMLInputElement>(null);
   const PasswordRef = useRef<HTMLInputElement>(null);
+  const history = useHistory(); // Initialize useHistory
 
 
 
@@ -30,23 +33,18 @@ const LoginCmpt = () => {
         LoginRequest(Email, Password).then((Res) => {
 
           if (Res === true) {
-            alert("Login Success ok")
-            // navigate('/login');
-            // console.log(Res)
+
+            alert("Login Success")
+
+            history.push('/home');
 
           } else {
 
             alert('Login Faild faild')
-            // console.log(Res)
-
 
           }
 
         })
-
-
-        // Proceed with registration
-        // console.log("Registration successful.");
       }
     }
   };

@@ -1,6 +1,8 @@
 import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { NavLink } from 'react-router-dom';
 
+import {MenuUserDetails} from "../../apiService/MenuUserDetails.js"
+
 import "./Header.css"
 
 import HeaderLogo from "../../assets/img/logo.png"
@@ -11,13 +13,41 @@ import { BiUserCircle } from 'react-icons/bi';
 import MenuBallance from './MenuBallance';
 import MenuHeaderSide from './MenuHeaderSide';
 import OtherMenuHeaderSide from './OtherMenuHeaderSide';
+import { useEffect, useState } from 'react';
 
 
 
 
 const Header = () => {
 
+    const [UserName, SetUserName] = useState('');
+    const [UserImage, SetImage] = useState('');
 
+    // useEffect(() => {
+    //   const fetchData = async () => {
+    //     // try {
+    //     //   const userDetails = await MenuUserDetails();
+    //     //   // Set the user name from userDetails or handle the data as needed
+    //     //   console.log("MenuUserDetails")
+    //     //   console.log(MenuUserDetails.data[0].UserEmail)
+    //     //   SetUserName(userDetails.username); // Replace 'username' with the actual property name from userDetails
+    //     // } catch (error) {
+    //     //   // Handle errors, e.g., show an error message
+    //     //   console.error(error);
+    //     // }
+    //   };
+    //   fetchData(); // Call the asynchronous function
+    // }, []);
+  
+
+    useEffect(() => {
+        MenuUserDetails().then((Response) => {
+          SetUserName(Response.data[0].FirstName);
+          SetImage(Response.data[0].Photo);
+          console.log("Response");
+          console.log(Response.data[0].FirstName);
+        });
+      }, []);
 
 
     return (
@@ -33,12 +63,14 @@ const Header = () => {
 
                             <div className="MenuProfileTextImage">
                                 <div className="MenuUser">
-                                    <BiUserCircle className='MenuUser' />
+                                    {/* <BiUserCircle className='MenuUser' /> */}
+                                    <img className='MenuUser' src={UserImage} alt="" />
+
                                 </div>
 
                                 <div className="MenuUserText">
-                                    <p>Sebastian Doe</p>
-                                    <span>4586580</span>
+                                    <p>{UserName}</p>
+                                    <span><b>ID:</b> 4586580</span>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +152,8 @@ const Header = () => {
 
                                 <NavLink to="/Settings" >
                                     <div className="HeaderProfile">
-                                        <FaUserAlt className='NotificationAlart' />
+                                        {/* <FaUserAlt className='NotificationAlart' /> */}
+                                        <img className='NotificationAlart' src={UserImage} alt="" />
                                         <span className='NotificationBage'>6</span>
                                     </div>
                                 </NavLink>

@@ -11,6 +11,8 @@ Router.post("/UserRegister", UserController.UserRegister);
 // User Login
 Router.post("/UserLogin", UserController.UserLogin);
 
+// Get User Details
+Router.get("/UserDetails", AuthVerifyMiddleware, UserController.ProfileDetails)
 
 
 // Create Travel Places
