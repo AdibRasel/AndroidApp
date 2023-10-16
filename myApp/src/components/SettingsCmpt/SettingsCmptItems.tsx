@@ -7,6 +7,7 @@ import {
 import "./SettingsCmpt.css"
 
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { MdDarkMode, MdVerified, MdNotificationsActive } from 'react-icons/md';
 import { AiFillSound, AiFillEdit } from 'react-icons/ai';
 import { SiGnuprivacyguard } from 'react-icons/si';
@@ -26,10 +27,10 @@ const SettingsCmptItems = () => {
 
 
 
-        <div className='AllPagesCmptSection'>
+        {/* item  */}
+        {/* <div className='AllPagesCmptSection'>
             <p>Theme</p>
 
-            {/* item  */}
             <div className="HeaderContentMenuItem">
 
                 <div className="HeaderContentMenuItemIcon">
@@ -44,10 +45,11 @@ const SettingsCmptItems = () => {
                 </div>
 
             </div>
-            {/* item  */}
-        </div>
+        </div> */}
+        {/* item  */}
 
 
+        {/* item  */}
         <div className='AllPagesCmptSection'>
             <p>Notifications</p>
 
@@ -86,17 +88,19 @@ const SettingsCmptItems = () => {
             {/* item  */}
 
 
+
         </div>
+        {/* item  */}
 
 
 
 
 
 
-        <div className='AllPagesCmptSection'>
+        {/* item  */}
+        {/* <div className='AllPagesCmptSection'>
             <p>Profile Settings</p>
 
-            {/* item  */}
             <NavLink to="/home" >
                 <div className="HeaderContentMenuItem">
 
@@ -112,9 +116,7 @@ const SettingsCmptItems = () => {
 
                 </div>
             </NavLink>
-            {/* item  */}
 
-            {/* item  */}
             <NavLink to="/home" >
                 <div className="HeaderContentMenuItem">
                     <div className="HeaderContentMenuItemIcon">
@@ -128,10 +130,8 @@ const SettingsCmptItems = () => {
                     </div>
                 </div>
             </NavLink>
-            {/* item  */}
 
 
-            {/* item  */}
             <NavLink to="/home" >
                 <div className="HeaderContentMenuItem">
 
@@ -147,11 +147,9 @@ const SettingsCmptItems = () => {
 
                 </div>
             </NavLink>
-            {/* item  */}
 
 
 
-            {/* item  */}
             <div className="HeaderContentMenuItem">
 
                 <div className="HeaderContentMenuItemIcon">
@@ -166,10 +164,10 @@ const SettingsCmptItems = () => {
                 </div>
 
             </div>
-            {/* item  */}
 
 
-        </div>
+        </div> */}
+        {/* item  */}
 
 
 
@@ -189,7 +187,7 @@ const SettingsCmptItems = () => {
                         <AiFillEdit className='HeaderContentMenuItemIconImg' />
                     </div>
                     <div className="HeaderContentMenuItemText">
-                        Update Password
+                        Profile Settings
                     </div>
                     <div className="HeaderContentMenuItemArrow">
                         <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
@@ -200,7 +198,7 @@ const SettingsCmptItems = () => {
             {/* item  */}
 
             {/* item  */}
-            <div className="HeaderContentMenuItem">
+            {/* <div className="HeaderContentMenuItem">
                 <div className="HeaderContentMenuItemIcon">
                     <MdVerified className='HeaderContentMenuItemIconImg' />
                 </div>
@@ -211,7 +209,7 @@ const SettingsCmptItems = () => {
                     <IonToggle>
                     </IonToggle>
                 </div>
-            </div>
+            </div> */}
             {/* item  */}
 
 
@@ -226,7 +224,7 @@ const SettingsCmptItems = () => {
                         Log out
                     </div>
                     <div className="HeaderContentMenuItemArrow">
-                        <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
+                        <BsFillArrowLeftCircleFill className='HeaderContentMenuItemIconImg' />
                     </div>
 
                 </div>
@@ -236,7 +234,7 @@ const SettingsCmptItems = () => {
 
 
             {/* item  */}
-            <NavLink to="/Login" >
+            {/* <NavLink to="/Login" >
                 <div className="HeaderContentMenuItem">
 
                     <div className="HeaderContentMenuItemIcon">
@@ -250,7 +248,7 @@ const SettingsCmptItems = () => {
                     </div>
 
                 </div>
-            </NavLink>
+            </NavLink> */}
             {/* item  */}
 
 

@@ -14,43 +14,6 @@ import HomeFooter from './HomeFooter'
 
 const HomeCmpt = () => {
   
-  const test = () => {
-
-
-
-
-
-
-
-
-
-    Storage.set({
-      key: "name",
-      value: 'Rasel Hossain Adib . Amader deshe hobe sei chele kobe kothai na bro hoye kaje bro hobe?'
-    });
-
-
-    Storage.get({ key: "name" }).then((item) => {
-      if (item) {
-        console.log(item.value)
-      }
-      else {
-        console.log("Storage item not found")
-      }
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-  }
 
   return (
     <div>
@@ -63,13 +26,6 @@ const HomeCmpt = () => {
       {/* DashBoardHome end  */}
 
 
-      <div className="text-center m-5">
-
-        <button onClick={test} className='text-center m-auto btn btn-success'>Hello</button>
-      </div>
-
-
-
 
       {/* Home Income Expenses Total Bills Savings start  */}
       <HomeIncomeExpenses />
@@ -77,33 +33,33 @@ const HomeCmpt = () => {
 
 
       {/* Home Transactions start  */}
-      <HomeTransactions />
+      {/* <HomeTransactions /> */}
       {/* Home Transactions end  */}
 
 
       {/* Home Cards start  */}
-      <HomeCards />
+      {/* <HomeCards /> */}
       {/* Home Cards end  */}
 
 
       {/* Home Send Money start */}
-      <HomeSendMoney />
+      {/* <HomeSendMoney /> */}
       {/* Home Send Money end */}
 
 
       {/* Home Monthly Bills start*/}
-      <HomeMonthlyBills />
+      {/* <HomeMonthlyBills /> */}
       {/* Home Monthly Bills end*/}
 
 
       {/* Home Saving Goals start  */}
-      <HomeSavingGoals />
+      {/* <HomeSavingGoals /> */}
       {/* Home Saving Goals end  */}
 
 
 
       {/* Home Lastest News start  */}
-      <HomeLastestNews />
+      {/* <HomeLastestNews /> */}
       {/* Home Lastest News end */}
 
 

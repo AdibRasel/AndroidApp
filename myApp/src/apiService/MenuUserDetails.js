@@ -29,11 +29,22 @@ export async function MenuUserDetails() {
         console.log("Error in response");
         return null;
       }
+
+
+
+
+
+
     } else {
       // Handle the case where the token is not available in storage
       console.log("Token not found in storage");
       return null;
     }
+
+
+
+
+    
   } catch (e) {
     // Handle any exceptions
     console.error("Error:", e);

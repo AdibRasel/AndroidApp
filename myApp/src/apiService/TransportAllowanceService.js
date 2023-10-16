@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Storage } from '@capacitor/storage'; // Import Storage from Capacitor
 
+
 const BaseURL = "http://localhost:5000/api/v1";
 
 // Travel Places Create
@@ -42,6 +43,62 @@ export async function TravelPlacesCreate(TravelFrom, TravelTo, VehicleName, Much
         return false;
     }
 }
+
+
+// Travel Places All List
+export async function TravelPlacesAllList() {
+    try {
+        const URL = BaseURL + "/TravelPlacesListAll";
+
+
+        // Retrieve the user's token and email from storage
+        const tokenItem = await Storage.get({ key: "Token" });
+        const emailItem = await Storage.get({ key: "UserEmail" });
+
+        if (tokenItem.value) {
+            // Access the user's token and email directly from tokenItem.value and emailItem.value
+            const userToken = tokenItem.value;
+            const userEmail = emailItem.value;
+
+            // Define the Axios headers with the user's token and email
+            const AxiosHeader = { headers: { token: userToken, email: userEmail } };
+
+
+            const result = await axios.get(URL, AxiosHeader);
+
+            if (result.status == 200) {
+                console.log("Read Success");
+                return result;
+            } else {
+                console.log("Read Faild, Request Fail ! API Service > Try > if > else");
+                return false;
+            }
+
+
+        } else {
+            // Handle the case where the token is not available in storage
+            console.log("Token not found in storage");
+            return null;
+        }
+
+
+
+
+    } catch (e) {
+        console.log("Read Faild, Request Fail ! API Service > Try > if > else");
+        return false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,3 +144,52 @@ export async function TravelVisitCreate(OfficeName, OfficeAddress, OfficeEmail, 
         return false;
     }
 }
+
+
+
+// Travel Visit All List
+export async function TravelVisitAllList() {
+    try {
+        const URL = BaseURL + "/AllTravelVisitList";
+
+
+        // Retrieve the user's token and email from storage
+        const tokenItem = await Storage.get({ key: "Token" });
+        const emailItem = await Storage.get({ key: "UserEmail" });
+
+        if (tokenItem.value) {
+            // Access the user's token and email directly from tokenItem.value and emailItem.value
+            const userToken = tokenItem.value;
+            const userEmail = emailItem.value;
+
+            // Define the Axios headers with the user's token and email
+            const AxiosHeader = { headers: { token: userToken, email: userEmail } };
+
+
+            const result = await axios.get(URL, AxiosHeader);
+
+            if (result.status == 200) {
+                console.log("Read Success");
+                return result;
+            } else {
+                console.log("Read Faild, Request Fail ! API Service > Try > if > else");
+                return false;
+            }
+
+
+        } else {
+            // Handle the case where the token is not available in storage
+            console.log("Token not found in storage");
+            return null;
+        }
+
+
+
+
+    } catch (e) {
+        console.log("Read Faild, Request Fail ! API Service > Try > if > else");
+        return false;
+    }
+}
+
+

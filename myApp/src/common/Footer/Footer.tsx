@@ -35,10 +35,18 @@ const Footer = () => {
                         </NavLink>
                     </div>
 
-                    <div className="BottomTabMenuItem">
+                    {/* <div className="BottomTabMenuItem">
                         <NavLink to="/Components">
                         <TbComponents className='FooterIcon' /> <br />
                             Components
+                        </NavLink>
+                    </div> */}
+
+
+                    <div className="BottomTabMenuItem">
+                        <NavLink to="/Components">
+                        <TbComponents className='FooterIcon' /> <br />
+                        Transaction
                         </NavLink>
                     </div>
                     
@@ -52,7 +60,7 @@ const Footer = () => {
                     <div className="BottomTabMenuItem">
                         <NavLink to="/Settings">
                         <TfiSettings className='FooterIcon' /> <br />
-                            Settings
+                        Setting
                         </NavLink>
                     </div>
 

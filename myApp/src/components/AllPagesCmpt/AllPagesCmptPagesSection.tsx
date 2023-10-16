@@ -39,6 +39,24 @@ const AllPagesCmptPagesSection = () => {
                 {/* item  */}
 
 
+
+                {/* item  */}
+                <NavLink to="/TransportListPage" >
+                    <div className="HeaderContentMenuItem">
+                        <div className="HeaderContentMenuItemIcon">
+                            <MdEmojiTransportation className='HeaderContentMenuItemIconImg' />
+                        </div>
+                        <div className="HeaderContentMenuItemText">
+                            Transport Allowance List
+                        </div>
+                        <div className="HeaderContentMenuItemArrow">
+                            <BsFillArrowRightCircleFill className='HeaderContentMenuItemIconImg' />
+                        </div>
+                    </div>
+                </NavLink>
+                {/* item  */}
+
+
                 {/* item  */}
                 <NavLink to="/Transactions" >
                     <div className="HeaderContentMenuItem">

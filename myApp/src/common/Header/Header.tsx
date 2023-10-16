@@ -23,23 +23,6 @@ const Header = () => {
     const [UserName, SetUserName] = useState('');
     const [UserImage, SetImage] = useState('');
 
-    // useEffect(() => {
-    //   const fetchData = async () => {
-    //     // try {
-    //     //   const userDetails = await MenuUserDetails();
-    //     //   // Set the user name from userDetails or handle the data as needed
-    //     //   console.log("MenuUserDetails")
-    //     //   console.log(MenuUserDetails.data[0].UserEmail)
-    //     //   SetUserName(userDetails.username); // Replace 'username' with the actual property name from userDetails
-    //     // } catch (error) {
-    //     //   // Handle errors, e.g., show an error message
-    //     //   console.error(error);
-    //     // }
-    //   };
-    //   fetchData(); // Call the asynchronous function
-    // }, []);
-  
-
     useEffect(() => {
         MenuUserDetails().then((Response) => {
           SetUserName(Response.data[0].FirstName);

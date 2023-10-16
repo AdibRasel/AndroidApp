@@ -14,13 +14,23 @@ Router.post("/UserLogin", UserController.UserLogin);
 // Get User Details
 Router.get("/UserDetails", AuthVerifyMiddleware, UserController.ProfileDetails)
 
-
+//================== Travel Places =======================
 // Create Travel Places
 Router.post("/CreateTravelPlaces", AuthVerifyMiddleware,  TransportAllowanceController.CreateTravelPlaces)
 
-// Create Travel Places
+// All Travel Place List
+Router.get("/TravelPlacesListAll", AuthVerifyMiddleware, TransportAllowanceController.AllTravelPlaceList)
+
+
+
+
+
+//====================== Travel Visit ======================
+// Create Travel Visit
 Router.post("/CreateTravelVisit", AuthVerifyMiddleware,  TransportAllowanceController.CreateTravelVisit)
 
+// All Travel Place List
+Router.get("/AllTravelVisitList", AuthVerifyMiddleware, TransportAllowanceController.AllTravelVisitList)
 
 
 
