@@ -33,33 +33,33 @@ const HomeCmpt = () => {
 
 
       {/* Home Transactions start  */}
-      {/* <HomeTransactions /> */}
+      <HomeTransactions />
       {/* Home Transactions end  */}
 
 
       {/* Home Cards start  */}
-      {/* <HomeCards /> */}
+      <HomeCards />
       {/* Home Cards end  */}
 
 
       {/* Home Send Money start */}
-      {/* <HomeSendMoney /> */}
+      <HomeSendMoney />
       {/* Home Send Money end */}
 
 
       {/* Home Monthly Bills start*/}
-      {/* <HomeMonthlyBills /> */}
+      <HomeMonthlyBills />
       {/* Home Monthly Bills end*/}
 
 
       {/* Home Saving Goals start  */}
-      {/* <HomeSavingGoals /> */}
+      <HomeSavingGoals />
       {/* Home Saving Goals end  */}
 
 
 
       {/* Home Lastest News start  */}
-      {/* <HomeLastestNews /> */}
+      <HomeLastestNews />
       {/* Home Lastest News end */}
 
 
